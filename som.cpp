@@ -2,13 +2,14 @@
 
 int main(){
     int eerste_getal, tweede_getal, som;
+
     std::cout << "Tel twee getallen bij elkaar op!" << std::endl;
 
     while (true){
         std::cout << "Eerste getal: " << std::endl;
         std::cin >> eerste_getal;
         if (std::cin.fail()){
-            std::cout << "Verkeerde input! Gebruik alleen nummers!" << std::endl;
+            std::cout << "Verkeerde input! Gebruik alleen getallen!" << std::endl;
             std::cin.clear();
             std::cin.ignore(1000, '\n');
         } else {
@@ -20,7 +21,7 @@ int main(){
         std::cout << "Tweede getal: " << std::endl;
         std::cin >> tweede_getal;
         if (std::cin.fail()){
-            std::cout << "Verkeerde input! Gebruik alleen nummers!" << std::endl;
+            std::cout << "Verkeerde input! Gebruik alleen getallen!" << std::endl;
             std::cin.clear();
             std::cin.ignore(1000, '\n');
         } else {
