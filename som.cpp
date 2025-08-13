@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 int main(){
     int eerste_getal, tweede_getal, som;
@@ -11,7 +12,7 @@ int main(){
         if (std::cin.fail()){
             std::cout << "Verkeerde input! Gebruik alleen getallen!" << std::endl;
             std::cin.clear();
-            std::cin.ignore(1000, '\n');
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         } else {
             break;
         }
@@ -23,7 +24,7 @@ int main(){
         if (std::cin.fail()){
             std::cout << "Verkeerde input! Gebruik alleen getallen!" << std::endl;
             std::cin.clear();
-            std::cin.ignore(1000, '\n');
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         } else {
             break;
         }
